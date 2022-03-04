@@ -1,4 +1,4 @@
-import appCss from '.App.css';
+//import appCss from '.App.css';
 import { App } from './App.js';
 
 document
