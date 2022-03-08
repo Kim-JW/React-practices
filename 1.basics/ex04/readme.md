@@ -14,3 +14,5 @@ ex04 : Application 번들링(bundling)
     $ npm i -D webpack webpack-cli
     $ npm ./node_modules/.bin/webpack --version
     $ npx webpack --version (위 문장이랑 같은 실행)
+7. package.json scripting("build" state)
+8. $ npm run build (bundling 작업)
