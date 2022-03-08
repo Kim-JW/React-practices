@@ -13,7 +13,7 @@ const App = function() {
         </div>
     );
 
-    React.createElement('div', React.createElement('h1', null, 'Hello React'), null);
+    //React.createElement('div', React.createElement('h1', null, 'Hello React'), null);
 }
 
 export { App }
