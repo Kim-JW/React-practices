@@ -1,9 +1,17 @@
-import React from "react";
+import React from 'react'
 
-function Content() {
-    return(
-        <p>JSX Tutorials - 특징3 :  함수 컴포넌트 만들기</p>
-    );
+const content = () => {
+  return (
+    <div>JSX Tutorials - 특징2 : Single Root Node</div>
+  )
 }
 
-export default Content;
+export default content
+
+const f = function () {
+
+};
+
+const f2 = () => {};
+
+() => {}
