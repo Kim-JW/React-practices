@@ -1,7 +1,7 @@
 이미지 모듈 번들링하기
 
 1. 설치 패키지
-$ npm i -D webpack webpack-cli webpack-dev-server style-loader css-loader sass-loader
+$ npm i -D webpack webpack-cli webpack-dev-server style-loader css-loader sass-loader node-sass
 
 2. CSS Loader 설정(webpack.config.js)
 output: {
