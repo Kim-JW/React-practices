@@ -6,7 +6,7 @@ const Clock02 = () => {
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
-
+    
     const html = 
     "<span>" + 
     ('0' + (hours > 12 ? hours - 12 : hours)).slice(-2) + 
