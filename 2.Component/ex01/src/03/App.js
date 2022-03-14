@@ -1,4 +1,5 @@
 import React from 'react'
+import FoodList from './FoodList'
 
 const App = function() {
     const foods = [{
@@ -17,7 +18,7 @@ const App = function() {
   
     return (
         <div id="App">
-        <FoodList foods={this.foods} />
+        <FoodList foods={foods} />
     </div>
   )
 }

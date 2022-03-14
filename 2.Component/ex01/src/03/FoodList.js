@@ -1,4 +1,5 @@
 import React from 'react'
+import FoodListItem from './FoodListItem'
 
 const FoodList = ({foods}) => {
   return (
