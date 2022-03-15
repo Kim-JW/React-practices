@@ -22,13 +22,13 @@ ex02: Component Styling(Working with UI)
     $ npm i react react-dom
 
 2. 설정
-    - babel config
-    - webpack.config
+    - config/babel.config.json
+    - config/webpack.config.js
 
 3. npm 스크립트
 "scripts": {
-    "debug" : "npx webpack serve --progress --mode development --env",
-    "build" : "npx webpack"
+    "debug": "npx webpack serve --config config/webpack.config.js --progress --mode development --env",
+    "build": "npx webpack"
   }
 
 4. 실행
