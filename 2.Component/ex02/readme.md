@@ -9,9 +9,12 @@ ex02: Component Styling(Working with UI)
 04. CSS Module(css loader options : {module: true}) - 왜 모듈화를 해야 하는가?
     - $ npm run debug scr=03 css-modules=true
 
-05. SACC & SCSS 
-06. 
-07. 
+05. SACC & SCSS (css loader options : {module: true})
+    -------------------------------------------------
+    CSS in JS(Style Component), Less & Styleable
+    -------------------------------------------------
+06. Font Awesome : Working with UI I
+07. React Modal : Working with UI II
 08. 
 
 1. 설치
