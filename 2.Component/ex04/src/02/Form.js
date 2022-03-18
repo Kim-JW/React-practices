@@ -50,7 +50,11 @@ export default function Form() {
          //setAgreeProv(status);
 
         // API 호출
-        const url = (`/prov/agree?status=${status}`);
+        // const url = (`/prov/agree?status=${status}`);
+        // result = await fetch(url);
+        // if(true) {
+        //     setAgreeProv(status);
+        // }
         console.log(url);
         
     }
