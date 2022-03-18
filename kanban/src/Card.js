@@ -1,8 +1,15 @@
 import React from 'react'
+import styles from './assets/css/Card.css'
+import TaskList from './TaskList'
 
-const Card = () => {
+const Card = ({key, title, description, status, tasks}) => {
   return (
-    <div>Card</div>
+    <div className={styles.Card}>
+      <div className={styles.Card__Title}>{title}</div> 
+          <div className={styles.Card__Details}>{description}
+
+          <TaskList tasks={tasks} /></div>
+    </div>
   )
 }
 
