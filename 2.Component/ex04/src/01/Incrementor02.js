@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 export default function ({begin, step}) {
     const [val, setVal] = useState(begin);
+    console.log("!!!!");
 
     return (
         <div>

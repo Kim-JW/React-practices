@@ -7,12 +7,16 @@ ex04: Component - State
      - this.state은 특정 컴포넌트 전용이며 변경을 위해서는 setState 함수를 사용(Class Component)
      - 상태가 업데이트가 되면 컴포넌트의 반응형(Reactive) Rendering이 트리거되고 컴포넌트와 자식 컴포넌트가 다시 렌더링 된다.
      - 컴포넌트의 동작(event)와 상호작용을 수행할 수 있는 매커니즘을 제고한다.
-     -
-     -
-     -     
+     - 클래스 컴포넌트에서는 constructor에서 초기화를 한다.
+     - 클래스 컴포넌트에서 상태 변경을 위해서는 setState 함수를 사용
+     - 함수 컴포넌트에서는 useState 후크 함수를 사용해서 초기화 한다.
+     - 함수 컴포넌트에서 상태 변경을 위해 useState 후크 함수에서 반환된 배열의 두번째 배열 요소를 사용한다. 
+
   2. 예제: src/01
 
 02. 제어 컴포넌트
+    1. input, textarea, option과 같은 폼 컴포넌트 중에 사용자 입력에 따라서 state값이
+    변경되고 렌더링 하는 컴포넌트를 제어(Controlled) 컴포넌트라 한다. 
     src/02 제어 컴포넌트
     src/03 비제어 컴포넌트
 

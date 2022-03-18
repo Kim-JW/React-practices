@@ -9,6 +9,7 @@ const TaskList = ({tasks}) => {
         {tasks.map((task) => <Task 
                                 key={task.no}
                                 name={task.name}
+                                done={task.done}
                                        />)}
       </ul>
     </div>
