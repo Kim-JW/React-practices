@@ -3,14 +3,22 @@ import styles from './assets/css/Card.css'
 import TaskList from './TaskList'
 
 const Card = ({key, title, description, tasks}) => {
-  const [showDetails, setShowDetails] = useState(false);
+  const [showDetails, setShowDetails] = useState(true);
 
   return (
     <div className={styles.Card}>
-      <div className={styles.Card__Title}>{title}</div> // 이거 클릭일때, 
+      <div 
+        className={showDetails ? [styles.Card__Title, styles.Card__Title__open].join(' ') : styles.Card__Title}
+        onClick={()=> setShowDetails(!showDetails)}>
+        {title}
+        </div>
+        {
+          showDetails ?
           <div className={styles.Card__Details}>
             {description}
           <TaskList tasks={tasks} /></div>
+         : null
+        }
     </div>
   )
 }
