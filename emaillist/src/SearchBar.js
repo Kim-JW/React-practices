@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from './assets/scss/Searchbar.scss';
+import {PropTypes} from 'prop-types';
 
-const SearchBar = ({keyword, callback}) => {
+export default function SearchBar ({keyword, callback}) {
   return (
     <div className={styles.Searchbar}>
         찾기: <input 
@@ -12,4 +13,6 @@ const SearchBar = ({keyword, callback}) => {
   )
 }
 
-export default SearchBar
+SearchBar.propTypes = {
+  callback : PropTypes.func.isRequired
+}
