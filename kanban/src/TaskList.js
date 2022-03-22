@@ -1,8 +1,9 @@
 import React from 'react'
 import Task from './Task'
 import styles from './assets/css/TaskList.css'
+import PropTypes from 'prop-types'
 
-const TaskList = ({tasks}) => {
+export default function TaskList ({tasks}) {
   return (
     <div className={styles.TaskList}>
       <ul>
@@ -16,4 +17,6 @@ const TaskList = ({tasks}) => {
   )
 }
 
-export default TaskList
+TaskList.PropTypes = {
+  tasks: PropTypes.arrayOf(PropTypes.shape(Task.PropTypes))
+}

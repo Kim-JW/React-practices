@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from './assets/css/CardList.css'
 import Card from './Card'
-const CardList = ({title, cards}) => {
+import PropTypes from 'prop-types'
+
+export default function CardList ({title, cards}) {
     console.log(title, cards)
 
     return (
@@ -19,4 +21,7 @@ const CardList = ({title, cards}) => {
     )
 }
 
-export default CardList
+CardList.PropTypes = {
+    title : PropTypes.string.isRequired,
+    cards : PropTypes.arrayOf(PropTypes.shape(CardList.PropTypes))
+}

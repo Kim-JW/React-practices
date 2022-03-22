@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import styles from './assets/css/TaskList.css'
+import PropTypes from 'prop-types'
 
-const Task = ({name, done}) => {
+export default function Task ({name, done}) {
 
   const [checkState, setCheckState] = useState(done)
 
@@ -17,4 +18,7 @@ const Task = ({name, done}) => {
   )
 }
 
-export default Task
+Task.PropTypes = {
+  name : PropTypes.string.isRequired,
+  done : PropTypes.bool.isRequired
+}
