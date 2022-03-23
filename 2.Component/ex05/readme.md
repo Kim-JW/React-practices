@@ -9,7 +9,7 @@ ex05: Component - Lifecycle
 
   2) Lifecycle II : update
       getDerivedStateFromProps: props로 받아온 값을 state에 동기화한다. [react v16.3]
-      shoudComponentUpdate: props state을 변경 했을 때, 리렌더링 여부를 결정한다.
+      shouldComponentUpdate: props state을 변경 했을 때, 리렌더링 여부를 결정한다.
       render
       *componentDidUpdate: DOM 업데이트가 끝난 직후 호출된다. DOM 작업이 가능하다.
   3) Lifecycle III: Unmount

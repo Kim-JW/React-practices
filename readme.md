@@ -6,3 +6,6 @@
 5. Testing(rest)
 6. Performance
 7. 통합(Integration)*
+    - emaillist
+    - gallery
+    - mysite
