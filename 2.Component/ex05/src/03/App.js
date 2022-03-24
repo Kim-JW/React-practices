@@ -32,10 +32,10 @@ export default class App extends Component {
                     this.state.ticks % 10 == 0 ? 
                     null :
                     <Clock 
-                    hours={this.state.hours}
-                    minutes={this.state.minutes}
-                    seconds={this.state.seconds}
-                    session={this.state.session} />  
+                        hours={this.state.hours}
+                        minutes={this.state.minutes}
+                        seconds={this.state.seconds}
+                        session={this.state.session} />  
                     
                 }
                     
