@@ -10,7 +10,7 @@ import data from './assets/json/data.json'
 // styles.App 
 
 const App = () => {
-  const [emails, setEmails] = useState(data);
+  const [emails, setEmails] = useState([]);
   const [keyword, setKeyword] = useState('');
   // SpringBoot 로 된 API로 데이터를 통신으로 받아서 하게됨.
 
@@ -26,6 +26,20 @@ const App = () => {
     })
 
     console.log(response)
+
+    if(!response.ok) {
+      console.log("error: ", response.status, response.statusText);
+      return;
+    }
+
+    const json = await response.json();
+    if(json.result !== 'success') {
+      console.log("error: ", json.message);
+      return;
+    }
+
+    setEmails(json.data);
+    
   }, [])
 
   const notifyKeywordChange = function(keyword) {
