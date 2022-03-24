@@ -1,13 +1,15 @@
 const path = require('path');
 
+//path : path.resolve('public'),
+
 module.exports = function(env) { 
     return {
         mode : 'development',
         entry : path.resolve(`src/index.js`),
         output: {
-            path : path.resolve('public'),
-            filename : 'main.js',
-            assetModuleFilename : 'assets/images/[hash][ext]'
+            path : path.resolve('../backend/src/main/resources'),
+            filename : 'static/js/main.js',
+            assetModuleFilename : 'static/images/[hash][ext]'
         },
         module : {
             rules : [{
