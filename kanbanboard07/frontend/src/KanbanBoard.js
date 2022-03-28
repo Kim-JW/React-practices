@@ -1,7 +1,7 @@
 import React from 'react'
 import CardList from './CardList'
 import styles from './assets/css/KanbanBoard.css'
-import cards from './data.json'
+// import cards from './data.json'
 
 // 카드 배열 분리, To do, Doing, Done state 보고 판단.
 // 분리는 Filter 사용. map, 새로운 배열 생성
