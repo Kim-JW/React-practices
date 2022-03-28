@@ -33,7 +33,16 @@ spring:
       url: jdbc:mysql://localhost:3306/webdb?characterEncoding=utf8
       username: webdb
       password: webdb
-
+---
+spring:   
+   config:
+      activate:
+         on-profile: development
+   
+   devtools:
+      livereload:
+         enabled: true
+   
 ---
 # mybatis
 mybatis:
