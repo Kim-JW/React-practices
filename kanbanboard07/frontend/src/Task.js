@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 export default function Task ({no, name, done, removeNo, doneCheck_callback}) {
 
-  // const [stateDone, setStateDone] = useState(done);
+  const [stateDone, setStateDone] = useState(done);
 
   return (
     <li className={styles.TaskList__Task}>

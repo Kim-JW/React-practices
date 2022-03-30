@@ -17,7 +17,6 @@ export default function CardList ({title, cards}) {
                                         description={card.description}
                                         //tasks={card.tasks} 
                                         />)}</div>
-            
         </div>
     )
 }

@@ -66,6 +66,8 @@ export default function Card ({cardNo, title, description}) {
     } catch (err) {
       console.log(err);
     }
+
+    notifyTask();
   }
 
   const notifyTaskDone = async function(no, done) {
@@ -150,7 +152,12 @@ export default function Card ({cardNo, title, description}) {
           showDetails ?
           <div className={styles.Card__Details}>
             {description}
-          <TaskList no={cardNo} tasks={tasks} removeNo={removeNo} addTask={addTask} doneCheck_callback={notifyTaskDone}/></div>
+          <TaskList 
+              no={cardNo} 
+              tasks={tasks} 
+              removeNo={removeNo} 
+              addTask={addTask} 
+              doneCheck_callback={notifyTaskDone}/></div>
          : null
         }
     </div>
