@@ -12,10 +12,11 @@ export default function CardList ({title, cards}) {
         <div className={styles.CardList}>
             <div>{cards.map((card) => < Card
                                         key={card.no}
+                                        cardNo={card.no}
                                         title={card.title}
                                         description={card.description}
-                                        status={card.status}
-                                        tasks={card.tasks} />)}</div>
+                                        //tasks={card.tasks} 
+                                        />)}</div>
             
         </div>
     )

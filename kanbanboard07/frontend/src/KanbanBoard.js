@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import CardList from './CardList'
 import styles from './assets/css/KanbanBoard.css'
 // import cards from './data.json'
@@ -7,11 +7,38 @@ import styles from './assets/css/KanbanBoard.css'
 // 분리는 Filter 사용. map, 새로운 배열 생성
 
 const KanbanBoard = () => {
-    console.log(cards)
+    const [cards, setCards] = useState([]);
 
-    const result = [0,1,2,3,4].filter((e) => e % 2 === 0);
+    useEffect(async() => {
+        try {
+            // fetch는 비동기니까 await 써줘야
+            const response = await fetch('/api/card', {
+              method: 'get',
+              headers: {
+                'Accept': 'application/json'
+              },
+            })
+            
+            if(!response.ok) {
+              throw new Error(`${response.status} ${response.statusText}`);
+            }
+      
+            const json = await response.json();
+      
+            if(json.result !== 'success') {
+              console.log("error: ", json.message);
+              throw new Error(`${json.result} ${json.message}`); 
+            }
+      
+            setCards(json.data);
+      
+            }catch(err) {
+              console.log(err);
+            }
+    },[])
 
-    console.log(result)
+    // const result = [0,1,2,3,4].filter((e) => e % 2 === 0);
+    // console.log(result)
 
     return (
         <div className={styles.KanbanBoard}>
