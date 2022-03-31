@@ -1,4 +1,6 @@
 ## React Pracractices - Integration(개발 환경 통합)
+$ npm i -D webpack webpack-cli webpack-dev-server style-loader css-loader node-sass sass-loader babel-loader @babel/core @babel/cli @babel/preset-env @babel/preset-react @babel/plugin-transform-runtime @babel/plugin-syntax-throw-expressions
+$ npm i react react-dom prop-types react-addons-update
 
 ## emaillist
    - 개발 통합 설정(with Spring Boot Backend)
